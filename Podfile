@@ -14,5 +14,11 @@ target 'BDDExamplesSwift' do
     pod 'Nimble'
     pod 'OCMock', '~> 3.4'
   end
+  
+  target 'BDDExamplesSwiftUITests' do
+      inherit! :search_paths
+      # Pods for testing
+      pod 'KIF', :configurations => ['Debug']
+  end
 
 end
