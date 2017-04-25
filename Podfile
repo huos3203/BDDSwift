@@ -18,7 +18,9 @@ target 'BDDExamplesSwift' do
   target 'BDDExamplesSwiftUITests' do
       inherit! :search_paths
       # Pods for testing
-      pod 'KIF', :configurations => ['Debug']
+#      pod 'KIF', :configurations => ['Debug']
+      pod 'KIF', :git => 'https://git.oschina.net/huosan/KIF.git'
+
   end
 
 end

@@ -15,6 +15,7 @@
 		84994F201EAE385C00B0E1FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84994F1E1EAE385C00B0E1FD /* LaunchScreen.storyboard */; };
 		84994F2B1EAE385D00B0E1FD /* BDDExamplesSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84994F2A1EAE385D00B0E1FD /* BDDExamplesSwiftTests.swift */; };
 		84994F401EAEC16800B0E1FD /* BDDExamplesSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84994F3F1EAEC16800B0E1FD /* BDDExamplesSwiftUITests.swift */; };
+		84994F4D1EAF961D00B0E1FD /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84994F4C1EAF961D00B0E1FD /* SignInViewController.swift */; };
 		DF3A7218FCD9F79C04A7BDB1 /* Pods_BDDExamplesSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513062BC355969D2767CD102 /* Pods_BDDExamplesSwift.framework */; };
 		E3F23BA268BCEE6A8D3F33A2 /* Pods_BDDExamplesSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E2B362CD1F8E3502D127921 /* Pods_BDDExamplesSwiftTests.framework */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,7 @@
 		84994F3F1EAEC16800B0E1FD /* BDDExamplesSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDDExamplesSwiftUITests.swift; sourceTree = "<group>"; };
 		84994F411EAEC16800B0E1FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84994F471EAEC66B00B0E1FD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		84994F4C1EAF961D00B0E1FD /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = viewController/SignInViewController.swift; sourceTree = "<group>"; };
 		89816BFED850B069827DA5FC /* Pods-BDDExamplesSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDDExamplesSwiftUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BDDExamplesSwiftUITests/Pods-BDDExamplesSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9652EE80952F3C80CE39F6F1 /* Pods-BDDExamplesSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDDExamplesSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-BDDExamplesSwift/Pods-BDDExamplesSwift.release.xcconfig"; sourceTree = "<group>"; };
 		B3DAAF5AB69BB0A2920F1C28 /* Pods_BDDExamplesSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BDDExamplesSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +157,7 @@
 		84994F351EAE387300B0E1FD /* Login View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				84994F4C1EAF961D00B0E1FD /* SignInViewController.swift */,
 			);
 			name = "Login View Controller";
 			sourceTree = "<group>";
@@ -482,6 +485,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84994F4D1EAF961D00B0E1FD /* SignInViewController.swift in Sources */,
 				84994F181EAE385C00B0E1FD /* ViewController.swift in Sources */,
 				84994F161EAE385C00B0E1FD /* AppDelegate.swift in Sources */,
 			);
