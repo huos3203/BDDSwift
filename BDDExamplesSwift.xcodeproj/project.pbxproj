@@ -276,7 +276,7 @@
 				TargetAttributes = {
 					84994F111EAE385C00B0E1FD = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 2C4H9T5RF5;
+						DevelopmentTeam = FA78T6VRG8;
 						ProvisioningStyle = Automatic;
 					};
 					84994F251EAE385D00B0E1FD = {
@@ -286,7 +286,7 @@
 					};
 					84994F3C1EAEC16800B0E1FD = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = XB692R6Y35;
+						DevelopmentTeam = ZX5MM38NWV;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 84994F111EAE385C00B0E1FD;
 					};
@@ -639,8 +639,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 2C4H9T5RF5;
+				DEVELOPMENT_TEAM = FA78T6VRG8;
 				INFOPLIST_FILE = BDDExamplesSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hsg.pyc.com.cn.ShareWXQQ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -655,8 +656,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 2C4H9T5RF5;
+				DEVELOPMENT_TEAM = FA78T6VRG8;
 				INFOPLIST_FILE = BDDExamplesSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hsg.pyc.com.cn.ShareWXQQ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -700,7 +702,7 @@
 			baseConfigurationReference = F17536B6FCC9AA010647380F /* Pods-BDDExamplesSwiftUITests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = XB692R6Y35;
+				DEVELOPMENT_TEAM = ZX5MM38NWV;
 				INFOPLIST_FILE = BDDExamplesSwiftUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Layer.Animations.BDDExamplesSwiftUITests;
@@ -716,7 +718,7 @@
 			baseConfigurationReference = 89816BFED850B069827DA5FC /* Pods-BDDExamplesSwiftUITests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = XB692R6Y35;
+				DEVELOPMENT_TEAM = ZX5MM38NWV;
 				INFOPLIST_FILE = BDDExamplesSwiftUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Layer.Animations.BDDExamplesSwiftUITests;
