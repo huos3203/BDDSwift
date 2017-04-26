@@ -16,6 +16,9 @@
 		84994F2B1EAE385D00B0E1FD /* BDDExamplesSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84994F2A1EAE385D00B0E1FD /* BDDExamplesSwiftTests.swift */; };
 		84994F401EAEC16800B0E1FD /* BDDExamplesSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84994F3F1EAEC16800B0E1FD /* BDDExamplesSwiftUITests.swift */; };
 		84994F4D1EAF961D00B0E1FD /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84994F4C1EAF961D00B0E1FD /* SignInViewController.swift */; };
+		D2D995E01EB03A45004A509A /* EventDescriptionFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D995DF1EB03A44004A509A /* EventDescriptionFormatter.swift */; };
+		D2D995E21EB048F1004A509A /* EventDescriptionFormatterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D995E11EB048F1004A509A /* EventDescriptionFormatterSpec.swift */; };
+		D2D995E41EB09B1C004A509A /* OCMockHepler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D995E31EB09B1B004A509A /* OCMockHepler.swift */; };
 		DF3A7218FCD9F79C04A7BDB1 /* Pods_BDDExamplesSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513062BC355969D2767CD102 /* Pods_BDDExamplesSwift.framework */; };
 		E3F23BA268BCEE6A8D3F33A2 /* Pods_BDDExamplesSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E2B362CD1F8E3502D127921 /* Pods_BDDExamplesSwiftTests.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +64,9 @@
 		9652EE80952F3C80CE39F6F1 /* Pods-BDDExamplesSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDDExamplesSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-BDDExamplesSwift/Pods-BDDExamplesSwift.release.xcconfig"; sourceTree = "<group>"; };
 		B3DAAF5AB69BB0A2920F1C28 /* Pods_BDDExamplesSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BDDExamplesSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1DF832199DE051B27A2D46 /* Pods-BDDExamplesSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDDExamplesSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BDDExamplesSwiftTests/Pods-BDDExamplesSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D2D995DF1EB03A44004A509A /* EventDescriptionFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventDescriptionFormatter.swift; path = Message/EventDescriptionFormatter.swift; sourceTree = "<group>"; };
+		D2D995E11EB048F1004A509A /* EventDescriptionFormatterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDescriptionFormatterSpec.swift; sourceTree = "<group>"; };
+		D2D995E31EB09B1B004A509A /* OCMockHepler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCMockHepler.swift; sourceTree = "<group>"; };
 		F17536B6FCC9AA010647380F /* Pods-BDDExamplesSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDDExamplesSwiftUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BDDExamplesSwiftUITests/Pods-BDDExamplesSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,7 +137,6 @@
 		84994F141EAE385C00B0E1FD /* BDDExamplesSwift */ = {
 			isa = PBXGroup;
 			children = (
-				84994F381EAE38BF00B0E1FD /* Helpers */,
 				84994F371EAE38A100B0E1FD /* Bar Button Item */,
 				84994F361EAE388A00B0E1FD /* Messsage Formatter */,
 				84994F351EAE387300B0E1FD /* Login View Controller */,
@@ -150,6 +155,8 @@
 			children = (
 				84994F2A1EAE385D00B0E1FD /* BDDExamplesSwiftTests.swift */,
 				84994F2C1EAE385D00B0E1FD /* Info.plist */,
+				D2D995E11EB048F1004A509A /* EventDescriptionFormatterSpec.swift */,
+				D2D995E31EB09B1B004A509A /* OCMockHepler.swift */,
 			);
 			path = BDDExamplesSwiftTests;
 			sourceTree = "<group>";
@@ -165,6 +172,7 @@
 		84994F361EAE388A00B0E1FD /* Messsage Formatter */ = {
 			isa = PBXGroup;
 			children = (
+				D2D995DF1EB03A44004A509A /* EventDescriptionFormatter.swift */,
 			);
 			name = "Messsage Formatter";
 			sourceTree = "<group>";
@@ -174,13 +182,6 @@
 			children = (
 			);
 			name = "Bar Button Item";
-			sourceTree = "<group>";
-		};
-		84994F381EAE38BF00B0E1FD /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Helpers;
 			sourceTree = "<group>";
 		};
 		84994F3E1EAEC16800B0E1FD /* BDDExamplesSwiftUITests */ = {
@@ -485,6 +486,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2D995E01EB03A45004A509A /* EventDescriptionFormatter.swift in Sources */,
 				84994F4D1EAF961D00B0E1FD /* SignInViewController.swift in Sources */,
 				84994F181EAE385C00B0E1FD /* ViewController.swift in Sources */,
 				84994F161EAE385C00B0E1FD /* AppDelegate.swift in Sources */,
@@ -496,6 +498,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				84994F2B1EAE385D00B0E1FD /* BDDExamplesSwiftTests.swift in Sources */,
+				D2D995E41EB09B1C004A509A /* OCMockHepler.swift in Sources */,
+				D2D995E21EB048F1004A509A /* EventDescriptionFormatterSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

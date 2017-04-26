@@ -13,6 +13,7 @@ target 'BDDExamplesSwift' do
     pod 'Quick'
     pod 'Nimble'
     pod 'OCMock', '~> 3.4'
+    pod 'MTDates'
   end
   
   target 'BDDExamplesSwiftUITests' do

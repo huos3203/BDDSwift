@@ -24,6 +24,10 @@ class SignInViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func ibaTapImage(_ sender: Any)
+    {
+        print("------------")
+    }
 
     /*
     // MARK: - Navigation
