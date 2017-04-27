@@ -34,6 +34,8 @@ public class EventDescriptionFormatter:NSObject
     public func eventDescriptionFromEvent(event:Event)->String
     {
         //
-        return "\(event.name)开始于:\(event.startDate)结束于:\(event.endDate)"
+        let start = self.dateFormatter?.string(from: event.startDate as Date)
+        let end = self.dateFormatter?.string(from: event.endDate as Date)
+        return "\(event.name) starts at \(start!) and ends at \(end!)."
     }
 }

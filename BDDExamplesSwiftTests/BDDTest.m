@@ -46,7 +46,7 @@ QuickSpecBegin(DescriptionFormatterSpec)
                 NSDate *endDate = [startDate mt_dateHoursAfter:1];
                 
                 mockEvent = OCMProtocolMock(@protocol(Event));
-                [OCMStub([mockEvent name]) andReturn:@"ddddd"];
+                [OCMStub([mockEvent name]) andReturn:@"Fixture Name"];
                 [OCMStub([mockEvent startDate]) andReturn:startDate];
                 [OCMStub([mockEvent endDate]) andReturn:endDate];
                 
@@ -59,7 +59,31 @@ QuickSpecBegin(DescriptionFormatterSpec)
             
             
             it(@"should return formatted description", ^{
-                expect(eventDescription).to(equal(@"开始于:Fixture String 1结束于:Fixture String 2."));
+                expect(eventDescription).to(equal(@"Fixture Name starts at Fixture String 1 and ends at Fixture String 2."));
+            });
+        });
+        
+        // BDD style
+        
+        describe(@"event description from event", ^{
+            
+            __block NSString *eventDescription;
+            __block id mockEvent;
+            
+            beforeEach(^{
+                NSDate *startDate = [NSDate mt_dateFromYear:2014 month:8 day:21];
+                NSDate *endDate = [startDate mt_dateHoursAfter:1];
+                
+                mockEvent = OCMProtocolMock(@protocol(Event));
+                [OCMStub([mockEvent name]) andReturn:@"Fixture Name"];
+                [OCMStub([mockEvent startDate]) andReturn:startDate];
+                [OCMStub([mockEvent endDate]) andReturn:endDate];
+                
+                eventDescription = [descriptionFormatter eventDescriptionFromEventWithEvent:mockEvent];
+            });
+            
+            it(@"should return formatted description", ^{
+                expect(eventDescription).to(equal(@"Fixture Name starts at Aug 21, 2014, 12:00 AM and ends at Aug 21, 2014, 1:00 AM."));
             });
         });
     });
