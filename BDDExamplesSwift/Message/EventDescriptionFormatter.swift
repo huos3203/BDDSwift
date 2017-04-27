@@ -3,13 +3,13 @@
 //  BDDExamplesSwift
 //
 //  Created by Xcode Server on 2017/4/26.
-//  Copyright © 2017年 huoshuguang. All rights reserved.
+//Users/admin/Downloads/GitRepos/Octopress/BDDExamplesSwift/README.md/  Copyright © 2017年 huoshuguang. All rights reserved.
 //
 
 import UIKit
 import Foundation
 
-@objc protocol Event {
+@objc public protocol Event {
     //
     var name:String{get}
     var startDate:NSDate{get}
@@ -18,11 +18,11 @@ import Foundation
 }
 
 
-class EventDescriptionFormatter:NSObject
+public class EventDescriptionFormatter:NSObject
 {
     //格式器
     
-    var dateFormatter:DateFormatter?
+    public var dateFormatter:DateFormatter?
     
     override init() {
         //
@@ -31,9 +31,9 @@ class EventDescriptionFormatter:NSObject
         self.dateFormatter?.timeStyle = .medium
     }
     
-    func eventDescriptionFromEvent(event:Event)->String
+    public func eventDescriptionFromEvent(event:Event)->String
     {
         //
-        return "\(event.name)开始于\(event.startDate)结束于\(event.endDate)"
+        return "\(event.name)开始于:\(event.startDate)结束于:\(event.endDate)"
     }
 }

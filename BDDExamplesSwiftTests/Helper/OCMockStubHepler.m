@@ -36,7 +36,7 @@
     OCMVerifyAll(mock);
 }
 
--(void)OCMVerifyAllWithDelay:(OCMockObject *)mock delay:(NSTimeInterval)delay
+-(void)OCMVerifyAll:(OCMockObject *)mock WithDelay:(NSTimeInterval)delay
 {
     OCMVerifyAllWithDelay(mock, delay);
 }

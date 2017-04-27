@@ -72,8 +72,6 @@ class EventDescriptionFormatterSpec: QuickSpec
                     OCMStub(end!).andReturn("ddddf")
                     
                     eventDescription = descriptionFormatter?.eventDescriptionFromEvent(event: mockEvent!)
-                    
-                    
                 }
                 
                 it("验证开始", closure: {

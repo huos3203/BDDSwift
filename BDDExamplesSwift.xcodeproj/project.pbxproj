@@ -16,6 +16,7 @@
 		84994F2B1EAE385D00B0E1FD /* BDDExamplesSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84994F2A1EAE385D00B0E1FD /* BDDExamplesSwiftTests.swift */; };
 		84994F401EAEC16800B0E1FD /* BDDExamplesSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84994F3F1EAEC16800B0E1FD /* BDDExamplesSwiftUITests.swift */; };
 		84994F4D1EAF961D00B0E1FD /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84994F4C1EAF961D00B0E1FD /* SignInViewController.swift */; };
+		84994F501EB23DDD00B0E1FD /* EventDescriptionFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D995DF1EB03A44004A509A /* EventDescriptionFormatter.swift */; };
 		D2D995E01EB03A45004A509A /* EventDescriptionFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D995DF1EB03A44004A509A /* EventDescriptionFormatter.swift */; };
 		D2D995E21EB048F1004A509A /* EventDescriptionFormatterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D995E11EB048F1004A509A /* EventDescriptionFormatterSpec.swift */; };
 		D2D995E41EB09B1C004A509A /* OCMockHepler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D995E31EB09B1B004A509A /* OCMockHepler.swift */; };
@@ -518,6 +519,7 @@
 			files = (
 				84994F2B1EAE385D00B0E1FD /* BDDExamplesSwiftTests.swift in Sources */,
 				D2D995E41EB09B1C004A509A /* OCMockHepler.swift in Sources */,
+				84994F501EB23DDD00B0E1FD /* EventDescriptionFormatter.swift in Sources */,
 				D2D995E21EB048F1004A509A /* EventDescriptionFormatterSpec.swift in Sources */,
 				D2EABB7E1EB1C01000088A73 /* BDDTest.m in Sources */,
 				D2EABB7B1EB1BF9C00088A73 /* OCMockStubHepler.m in Sources */,
@@ -592,6 +594,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -643,6 +646,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;

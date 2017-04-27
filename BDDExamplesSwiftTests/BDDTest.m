@@ -7,42 +7,61 @@
 //
 
 #import <XCTest/XCTest.h>
-#import <OCMock/OCMock.h>
-#import <Quick/Quick.h>
-#import <Nimble/Nimble.h>
+//#import <Quick/Quick.h>
+//#import <OCMock/OCMock.h>
+//#import <MTDates/NSDate+MTDates.h>
 
+@import MTDates;
+@import OCMock;
+@import Quick;
+@import Nimble;
 
-@interface BDDTest : XCTestCase
+#import "BDDExamplesSwiftTests-Swift.h"
 
-@end
+QuickSpecBegin(DescriptionFormatterSpec)
 
-@implementation BDDTest
-
-- (void)setUp {
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-}
-
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
-}
-
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-    
     describe(@"格式化消息", ^{
         
+        __block EventDescriptionFormatter *descriptionFormatter;
+        
+        beforeEach(^{
+            descriptionFormatter = [[EventDescriptionFormatter alloc] init];
+        });
+        
+        afterEach(^{
+            descriptionFormatter = nil;
+        });
+        
+        describe(@"event description from event", ^{
+            
+            __block id mockDateFormatter;
+            __block NSString *eventDescription;
+            __block id mockEvent;
+            
+            beforeEach(^{
+                mockDateFormatter = OCMClassMock([NSDateFormatter class]);
+                descriptionFormatter.dateFormatter = mockDateFormatter;
+                
+                NSDate *startDate = [NSDate mt_dateFromYear:2014 month:8 day:21];
+                NSDate *endDate = [startDate mt_dateHoursAfter:1];
+                
+                mockEvent = OCMProtocolMock(@protocol(Event));
+                [OCMStub([mockEvent name]) andReturn:@"ddddd"];
+                [OCMStub([mockEvent startDate]) andReturn:startDate];
+                [OCMStub([mockEvent endDate]) andReturn:endDate];
+                
+                [OCMStub([mockDateFormatter stringFromDate:startDate]) andReturn:@"Fixture String 1"];
+                
+                [OCMStub([mockDateFormatter stringFromDate:endDate]) andReturn:@"Fixture String 2"];
+                
+                eventDescription = [descriptionFormatter eventDescriptionFromEventWithEvent:mockEvent];
+            });
+            
+            
+            it(@"should return formatted description", ^{
+                expect(eventDescription).to(equal(@"开始于:Fixture String 1结束于:Fixture String 2."));
+            });
+        });
     });
-    
-}
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
-}
-
-@end
+QuickSpecEnd
