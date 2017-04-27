@@ -19,6 +19,8 @@
 		D2D995E01EB03A45004A509A /* EventDescriptionFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D995DF1EB03A44004A509A /* EventDescriptionFormatter.swift */; };
 		D2D995E21EB048F1004A509A /* EventDescriptionFormatterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D995E11EB048F1004A509A /* EventDescriptionFormatterSpec.swift */; };
 		D2D995E41EB09B1C004A509A /* OCMockHepler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D995E31EB09B1B004A509A /* OCMockHepler.swift */; };
+		D2EABB7B1EB1BF9C00088A73 /* OCMockStubHepler.m in Sources */ = {isa = PBXBuildFile; fileRef = D2EABB7A1EB1BF9C00088A73 /* OCMockStubHepler.m */; };
+		D2EABB7E1EB1C01000088A73 /* BDDTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D2EABB7D1EB1C01000088A73 /* BDDTest.m */; };
 		DF3A7218FCD9F79C04A7BDB1 /* Pods_BDDExamplesSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513062BC355969D2767CD102 /* Pods_BDDExamplesSwift.framework */; };
 		E3F23BA268BCEE6A8D3F33A2 /* Pods_BDDExamplesSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E2B362CD1F8E3502D127921 /* Pods_BDDExamplesSwiftTests.framework */; };
 /* End PBXBuildFile section */
@@ -67,6 +69,10 @@
 		D2D995DF1EB03A44004A509A /* EventDescriptionFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventDescriptionFormatter.swift; path = Message/EventDescriptionFormatter.swift; sourceTree = "<group>"; };
 		D2D995E11EB048F1004A509A /* EventDescriptionFormatterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDescriptionFormatterSpec.swift; sourceTree = "<group>"; };
 		D2D995E31EB09B1B004A509A /* OCMockHepler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCMockHepler.swift; sourceTree = "<group>"; };
+		D2EABB781EB1BF9B00088A73 /* BDDExamplesSwiftTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BDDExamplesSwiftTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		D2EABB791EB1BF9C00088A73 /* OCMockStubHepler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMockStubHepler.h; path = Helper/OCMockStubHepler.h; sourceTree = "<group>"; };
+		D2EABB7A1EB1BF9C00088A73 /* OCMockStubHepler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCMockStubHepler.m; path = Helper/OCMockStubHepler.m; sourceTree = "<group>"; };
+		D2EABB7D1EB1C01000088A73 /* BDDTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDDTest.m; sourceTree = "<group>"; };
 		F17536B6FCC9AA010647380F /* Pods-BDDExamplesSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDDExamplesSwiftUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BDDExamplesSwiftUITests/Pods-BDDExamplesSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,10 +159,11 @@
 		84994F291EAE385D00B0E1FD /* BDDExamplesSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
+				D2EABB7C1EB1BFA300088A73 /* Hepler */,
 				84994F2A1EAE385D00B0E1FD /* BDDExamplesSwiftTests.swift */,
 				84994F2C1EAE385D00B0E1FD /* Info.plist */,
 				D2D995E11EB048F1004A509A /* EventDescriptionFormatterSpec.swift */,
-				D2D995E31EB09B1B004A509A /* OCMockHepler.swift */,
+				D2EABB7D1EB1C01000088A73 /* BDDTest.m */,
 			);
 			path = BDDExamplesSwiftTests;
 			sourceTree = "<group>";
@@ -191,6 +198,17 @@
 				84994F411EAEC16800B0E1FD /* Info.plist */,
 			);
 			path = BDDExamplesSwiftUITests;
+			sourceTree = "<group>";
+		};
+		D2EABB7C1EB1BFA300088A73 /* Hepler */ = {
+			isa = PBXGroup;
+			children = (
+				D2D995E31EB09B1B004A509A /* OCMockHepler.swift */,
+				D2EABB791EB1BF9C00088A73 /* OCMockStubHepler.h */,
+				D2EABB7A1EB1BF9C00088A73 /* OCMockStubHepler.m */,
+				D2EABB781EB1BF9B00088A73 /* BDDExamplesSwiftTests-Bridging-Header.h */,
+			);
+			name = Hepler;
 			sourceTree = "<group>";
 		};
 		D562EBB19FB0811626CDA049 /* Frameworks */ = {
@@ -285,6 +303,7 @@
 					};
 					84994F251EAE385D00B0E1FD = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 84994F111EAE385C00B0E1FD;
 					};
@@ -500,6 +519,8 @@
 				84994F2B1EAE385D00B0E1FD /* BDDExamplesSwiftTests.swift in Sources */,
 				D2D995E41EB09B1C004A509A /* OCMockHepler.swift in Sources */,
 				D2D995E21EB048F1004A509A /* EventDescriptionFormatterSpec.swift in Sources */,
+				D2EABB7E1EB1C01000088A73 /* BDDTest.m in Sources */,
+				D2EABB7B1EB1BF9C00088A73 /* OCMockStubHepler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,10 +702,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BDDExamplesSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Layer.Animations.BDDExamplesSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BDDExamplesSwiftTests/BDDExamplesSwiftTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BDDExamplesSwift.app/BDDExamplesSwift";
 			};
@@ -696,10 +720,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BDDExamplesSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Layer.Animations.BDDExamplesSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BDDExamplesSwiftTests/BDDExamplesSwiftTests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BDDExamplesSwift.app/BDDExamplesSwift";
 			};

@@ -17,12 +17,14 @@ import Foundation
     
 }
 
-class EventDescriptionFormatter
+
+class EventDescriptionFormatter:NSObject
 {
     //格式器
+    
     var dateFormatter:DateFormatter?
     
-    init() {
+    override init() {
         //
         self.dateFormatter = DateFormatter()
         self.dateFormatter?.dateStyle = .short

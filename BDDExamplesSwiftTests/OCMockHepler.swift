@@ -9,50 +9,77 @@
 import Foundation
 import OCMock
 
-func OCMClassMock(cls:AnyClass)
+
+public func OCMClassMock(for cls:AnyClass)-> Any!
 {
 //    [OCMockObject niceMockForClass:cls]
-    OCMockObject.niceMock(for: cls)
+   return OCMockObject.niceMock(for: cls)
 }
 
-func OCMStrictClassMock(cls:AnyClass)
+func OCMStrictClassMock(for cls:AnyClass)-> Any!
 {
     //[OCMockObject mockForClass:cls]
-    OCMockObject.mock(for: cls)
+    return OCMockObject.mock(for: cls)
     
 }
-func OCMProtocolMock(proto:Protocol)
+func OCMProtocolMock(for proto:Protocol)-> Any!
 {
 //    [OCMockObject niceMockForProtocol:protocol]
-    OCMockObject.niceMock(for: proto)
+    return OCMockObject.niceMock(for: proto)
     
 }
-func  OCMStrictProtocolMock(proto:Protocol)
+func  OCMStrictProtocolMock(for proto:Protocol) -> Any!
 {
 //    [OCMockObject mockForProtocol:protocol]
-    OCMockObject.mock(for: proto)
+    return OCMockObject.mock(for: proto)
     
 }
-func OCMPartialMock(obj:NSObject)
+func OCMPartialMock(for obj:NSObject)-> Any!
 {
 //    [OCMockObject partialMockForObject:obj]
-    OCMockObject.partialMock(for: obj)
+    return OCMockObject.partialMock(for: obj)
     
 }
 
-func OCMObserverMock()
+func OCMObserverMock() -> Any!
 {
-//    [OCMockObject observerMock]
-    OCMockObject.observerMock()
+   return OCMockObject.observerMock()
 }
 
-func OCMStub(invocation:Any)
+func OCMStub(_ invocation:NSObject) -> OCMStubRecorder
 {
-    _OCMSilenceWarnings(macro: "")
+    return OCMockStubHepler().ocmStub(invocation)
 }
 
-func _OCMSilenceWarnings(macro:String)
+func OCMExpect(_ invocation:NSObject)-> OCMStubRecorder
 {
-//_Pragma("clang diagnostic push")
+    return OCMockStubHepler().ocmExpect(invocation)
 }
+
+func OCMReject(_ invocation:NSObject)-> OCMStubRecorder
+{
+    return OCMockStubHepler().ocmReject(invocation)
+}
+
+//-(void)ClassMethod:(NSObject *)invocation
+func ClassMethod(_ invocation:NSObject)
+{
+    OCMockStubHepler().classMethod(invocation)
+}
+
+func OCMVerifyAll(_ invocation:OCMockObject)
+{
+    OCMockStubHepler().ocmVerifyAll(invocation)
+}
+
+func OCMVerifyAllWithDelay(_ invocation:OCMockObject,delay:TimeInterval)
+{
+    OCMockStubHepler().ocmVerifyAll(invocation, withDelay: delay)
+}
+
+func OCMVerify(_ invocation:NSObject)
+{
+    OCMockStubHepler().ocmVerify(invocation)
+}
+
 

@@ -49,16 +49,37 @@ class EventDescriptionFormatterSpec: QuickSpec
                 
                 beforeEach {
                     //
-                    mockDateFormatter = OCMockObject.mock(for: EventDescriptionFormatter.self)
+                    mockDateFormatter = OCMStrictClassMock(for: DateFormatter.self)
+                    
                     descriptionFormatter?.dateFormatter = mockDateFormatter as! DateFormatter?
                     let startDate:NSDate = NSDate.mt_date(fromYear: 2014, month: 8, day: 21) as NSDate
-                    let endDate = startDate.mt_dateHours(after: 1)
+                    let endDate:NSDate = startDate.mt_dateHours(after: 1) as NSDate
                     
                     //http://stackoverflow.com/questions/24041258/how-passing-a-protocol-as-parameter-in-swift/27162499#27162499
-                    mockEvent = OCMockObject.mock(for: Event.self) as? Event
+                    mockEvent = OCMStrictProtocolMock(for:Event.self) as? Event
 //                    OCMockObject().stub(mockEvent?.startDate)
+                   
+                    let start1 = (mockEvent?.startDate)!
+                    OCMStub(start1).andReturn(startDate)
+                    
+                    let end1 = (mockEvent?.endDate)!
+                    OCMStub(end1).andReturn(endDate)
+                    
+                    let start:NSString? = descriptionFormatter?.dateFormatter?.string(from: startDate as Date) as NSString?
+                    let end:NSString? = descriptionFormatter?.dateFormatter?.string(from: endDate as Date) as NSString?
+                    
+                    OCMStub(start!).andReturn("ddd")
+                    OCMStub(end!).andReturn("ddddf")
+                    
+                    eventDescription = descriptionFormatter?.eventDescriptionFromEvent(event: mockEvent!)
+                    
                     
                 }
+                
+                it("验证开始", closure: {
+                    //
+                    expect(eventDescription).to(equal("Fixture Name starts at Fixture String 1 and ends at Fixture String 2."))
+                })
                 
             }
         }
