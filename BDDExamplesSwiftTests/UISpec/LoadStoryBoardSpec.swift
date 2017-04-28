@@ -13,6 +13,7 @@ import Nimble
 import KPAStoryboardConvenience
 import KPAViewControllerTestHelper
 
+
 @testable import BDDExamplesSwift
 
 class LoadStoryBoardSpec: QuickSpec
@@ -24,8 +25,13 @@ class LoadStoryBoardSpec: QuickSpec
             var viewController:SignInViewController?
             beforeEach {
                 
+                let name:AnyClass! = object_getClass(SignInViewController.self)
                 let str = NSStringFromClass(SignInViewController.self)
-                print("---------\(str)")
+                print("\(name!)---------\(str)")
+/*                BDDExamplesSwift.SignInViewController
+                  ---------
+                  BDDExamplesSwift.SignInViewController
+ */
                 //
 //                let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
 //                viewController = storyboard.instantiateViewController(withIdentifier: "SignInViewController") as! SignInViewController
