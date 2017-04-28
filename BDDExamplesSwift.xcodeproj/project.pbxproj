@@ -22,6 +22,7 @@
 		D2D995E41EB09B1C004A509A /* OCMockHepler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D995E31EB09B1B004A509A /* OCMockHepler.swift */; };
 		D2EABB7B1EB1BF9C00088A73 /* OCMockStubHepler.m in Sources */ = {isa = PBXBuildFile; fileRef = D2EABB7A1EB1BF9C00088A73 /* OCMockStubHepler.m */; };
 		D2EABB7E1EB1C01000088A73 /* BDDTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D2EABB7D1EB1C01000088A73 /* BDDTest.m */; };
+		D2EABB801EB31C1200088A73 /* LoadStoryBoardSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EABB7F1EB31C1200088A73 /* LoadStoryBoardSpec.swift */; };
 		DF3A7218FCD9F79C04A7BDB1 /* Pods_BDDExamplesSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513062BC355969D2767CD102 /* Pods_BDDExamplesSwift.framework */; };
 		E3F23BA268BCEE6A8D3F33A2 /* Pods_BDDExamplesSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E2B362CD1F8E3502D127921 /* Pods_BDDExamplesSwiftTests.framework */; };
 /* End PBXBuildFile section */
@@ -74,6 +75,7 @@
 		D2EABB791EB1BF9C00088A73 /* OCMockStubHepler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMockStubHepler.h; path = Helper/OCMockStubHepler.h; sourceTree = "<group>"; };
 		D2EABB7A1EB1BF9C00088A73 /* OCMockStubHepler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCMockStubHepler.m; path = Helper/OCMockStubHepler.m; sourceTree = "<group>"; };
 		D2EABB7D1EB1C01000088A73 /* BDDTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDDTest.m; sourceTree = "<group>"; };
+		D2EABB7F1EB31C1200088A73 /* LoadStoryBoardSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadStoryBoardSpec.swift; path = UISpec/LoadStoryBoardSpec.swift; sourceTree = "<group>"; };
 		F17536B6FCC9AA010647380F /* Pods-BDDExamplesSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDDExamplesSwiftUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BDDExamplesSwiftUITests/Pods-BDDExamplesSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,9 +164,10 @@
 			children = (
 				D2EABB7C1EB1BFA300088A73 /* Hepler */,
 				84994F2A1EAE385D00B0E1FD /* BDDExamplesSwiftTests.swift */,
-				84994F2C1EAE385D00B0E1FD /* Info.plist */,
 				D2D995E11EB048F1004A509A /* EventDescriptionFormatterSpec.swift */,
 				D2EABB7D1EB1C01000088A73 /* BDDTest.m */,
+				84994F2C1EAE385D00B0E1FD /* Info.plist */,
+				D2EABB7F1EB31C1200088A73 /* LoadStoryBoardSpec.swift */,
 			);
 			path = BDDExamplesSwiftTests;
 			sourceTree = "<group>";
@@ -520,6 +523,7 @@
 				84994F2B1EAE385D00B0E1FD /* BDDExamplesSwiftTests.swift in Sources */,
 				D2D995E41EB09B1C004A509A /* OCMockHepler.swift in Sources */,
 				84994F501EB23DDD00B0E1FD /* EventDescriptionFormatter.swift in Sources */,
+				D2EABB801EB31C1200088A73 /* LoadStoryBoardSpec.swift in Sources */,
 				D2D995E21EB048F1004A509A /* EventDescriptionFormatterSpec.swift in Sources */,
 				D2EABB7E1EB1C01000088A73 /* BDDTest.m in Sources */,
 				D2EABB7B1EB1BF9C00088A73 /* OCMockStubHepler.m in Sources */,

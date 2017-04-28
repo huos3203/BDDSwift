@@ -12,10 +12,13 @@ class SignInViewController: UIViewController {
 
     @IBOutlet weak var ibUsernameField: UITextField!
     @IBOutlet weak var ibPasswordField: UITextField!
+    @IBOutlet weak var ibImageClick: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+//        let tap = UIGestureRecognizer.init(target: self, action: "")
+//        ibImageClick.addGestureRecognizer(tap)
         // Do any additional setup after loading the view.
     }
 
@@ -27,6 +30,7 @@ class SignInViewController: UIViewController {
     @IBAction func ibaTapImage(_ sender: Any)
     {
         print("------------")
+        ibPasswordField.text = "huoshu"
     }
 
     /*
