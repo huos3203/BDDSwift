@@ -84,12 +84,12 @@ NSStringFromClass(self).components(separatedBy: ".").last!
 + (NSString *)storyboardIdentifierForClass:(Class)theClass;
 {
     NSString *className = NSStringFromClass(theClass);
-+    NSArray *swiftClassName = [className componentsSeparatedByString:@"."];
+    +NSArray *swiftClassName = [className componentsSeparatedByString:@"."];
 
-+    if ([swiftClassName count]>0)
-+    {
-+        className = swiftClassName[1];
-+    }
+    +if ([swiftClassName count]>0)
+    +{
+        +className = swiftClassName[1];
+    +}
     return className;
 }
 ```
