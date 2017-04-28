@@ -80,7 +80,7 @@ NSStringFromClass(self).components(separatedBy: ".").last!
 >至此就需要用这种方式来修改原有库中NSStringFromClass实现。
 
 优化在OC代码中使用NSStringFromClass方式获取类名称字符串：
-```objc
+```diff
 + (NSString *)storyboardIdentifierForClass:(Class)theClass;
 {
     NSString *className = NSStringFromClass(theClass);
