@@ -17,6 +17,7 @@
 		84994F401EAEC16800B0E1FD /* BDDExamplesSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84994F3F1EAEC16800B0E1FD /* BDDExamplesSwiftUITests.swift */; };
 		84994F4D1EAF961D00B0E1FD /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84994F4C1EAF961D00B0E1FD /* SignInViewController.swift */; };
 		84994F501EB23DDD00B0E1FD /* EventDescriptionFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D995DF1EB03A44004A509A /* EventDescriptionFormatter.swift */; };
+		84994F521EB401E000B0E1FD /* ProcotolHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84994F511EB401E000B0E1FD /* ProcotolHelper.swift */; };
 		D2D995E01EB03A45004A509A /* EventDescriptionFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D995DF1EB03A44004A509A /* EventDescriptionFormatter.swift */; };
 		D2D995E21EB048F1004A509A /* EventDescriptionFormatterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D995E11EB048F1004A509A /* EventDescriptionFormatterSpec.swift */; };
 		D2D995E41EB09B1C004A509A /* OCMockHepler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D995E31EB09B1B004A509A /* OCMockHepler.swift */; };
@@ -64,6 +65,7 @@
 		84994F411EAEC16800B0E1FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84994F471EAEC66B00B0E1FD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		84994F4C1EAF961D00B0E1FD /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = viewController/SignInViewController.swift; sourceTree = "<group>"; };
+		84994F511EB401E000B0E1FD /* ProcotolHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProcotolHelper.swift; path = Message/ProcotolHelper.swift; sourceTree = "<group>"; };
 		89816BFED850B069827DA5FC /* Pods-BDDExamplesSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDDExamplesSwiftUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BDDExamplesSwiftUITests/Pods-BDDExamplesSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9652EE80952F3C80CE39F6F1 /* Pods-BDDExamplesSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDDExamplesSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-BDDExamplesSwift/Pods-BDDExamplesSwift.release.xcconfig"; sourceTree = "<group>"; };
 		B3DAAF5AB69BB0A2920F1C28 /* Pods_BDDExamplesSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BDDExamplesSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -184,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				D2D995DF1EB03A44004A509A /* EventDescriptionFormatter.swift */,
+				84994F511EB401E000B0E1FD /* ProcotolHelper.swift */,
 			);
 			name = "Messsage Formatter";
 			sourceTree = "<group>";
@@ -511,6 +514,7 @@
 			files = (
 				D2D995E01EB03A45004A509A /* EventDescriptionFormatter.swift in Sources */,
 				84994F4D1EAF961D00B0E1FD /* SignInViewController.swift in Sources */,
+				84994F521EB401E000B0E1FD /* ProcotolHelper.swift in Sources */,
 				84994F181EAE385C00B0E1FD /* ViewController.swift in Sources */,
 				84994F161EAE385C00B0E1FD /* AppDelegate.swift in Sources */,
 			);

@@ -11,9 +11,9 @@ import Foundation
 
 @objc public protocol Event {
     //
-    var name:String{get}
-    var startDate:NSDate{get}
-    var endDate:NSDate{get}
+    @objc var name:String{get}
+    @objc var startDate:NSDate{get}
+    @objc var endDate:NSDate{get}
     
 }
 

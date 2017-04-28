@@ -57,3 +57,41 @@ There are a couple of open source libraries for creating mock objects and stubbi
 [单元测试](http://nshipster.cn/unit-testing/)
 
 [Kiwi 使用进阶 Mock, Stub, 参数捕获和异步测试](https://onevcat.com/2014/05/kiwi-mock-stub-test/)
+
+### swift内省机制的变更
+[Get a user-readable version of the class name in swift (in objc NSStringFromClass was fine)](http://stackoverflow.com/questions/24107658/get-a-user-readable-version-of-the-class-name-in-swift-in-objc-nsstringfromclas)
+
+在swift3中如下效果：
+```swift
+let name:AnyClass! = object_getClass(SignInViewController.self)
+let str = NSStringFromClass(SignInViewController.self)
+let dd = String.init(describing: SignInViewController.self)
+let ddd = String(describing: type(of: SignInViewController.self))
+print("\(ddd)-------\(dd)----------\(name!)---------\(str)")
+
+SignInViewController.Type-------SignInViewController----------BDDExamplesSwift.SignInViewController---------BDDExamplesSwift.SignInViewController
+------------
+```
+
+如果还想通过NSStringFromClass方式获取：
+```
+NSStringFromClass(self).components(separatedBy: ".").last!
+```
+>至此就需要用这种方式来修改原有库中NSStringFromClass实现。
+
+优化在OC代码中使用NSStringFromClass方式获取类名称字符串：
+```objc
++ (NSString *)storyboardIdentifierForClass:(Class)theClass;
+{
+    NSString *className = NSStringFromClass(theClass);
++    NSArray *swiftClassName = [className componentsSeparatedByString:@"."];
+
++    if ([swiftClassName count]>0)
++    {
++        className = swiftClassName[1];
++    }
+    return className;
+}
+```
+
+

@@ -16,6 +16,7 @@ import KPAViewControllerTestHelper
 
 @testable import BDDExamplesSwift
 
+
 class LoadStoryBoardSpec: QuickSpec
 {
     override func spec()
@@ -27,7 +28,9 @@ class LoadStoryBoardSpec: QuickSpec
                 
                 let name:AnyClass! = object_getClass(SignInViewController.self)
                 let str = NSStringFromClass(SignInViewController.self)
-                print("\(name!)---------\(str)")
+                let dd = String.init(describing: SignInViewController.self)
+                let ddd = String(describing: type(of: SignInViewController.self))
+                print("\(ddd)-------\(dd)----------\(name!)---------\(str)")
 /*                BDDExamplesSwift.SignInViewController
                   ---------
                   BDDExamplesSwift.SignInViewController

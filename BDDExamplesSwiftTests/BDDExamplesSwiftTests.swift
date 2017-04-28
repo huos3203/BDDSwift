@@ -7,6 +7,8 @@
 //
 
 import XCTest
+import OCMock
+
 @testable import BDDExamplesSwift
 
 class BDDExamplesSwiftTests: XCTestCase {
@@ -24,6 +26,8 @@ class BDDExamplesSwiftTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let proto = objc_getProtocol("BDDExamplesSwift.Event")
+        var mockEvent = OCMStrictProtocolMock(for:proto!) as! BDDExamplesSwift.Event
     }
     
     func testPerformanceExample() {

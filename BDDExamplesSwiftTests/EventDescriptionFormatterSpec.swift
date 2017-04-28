@@ -45,7 +45,7 @@ class EventDescriptionFormatterSpec: QuickSpec
             describe("测试日期行为") {
                 var mockDateFormatter:Any?
                 var eventDescription:String?
-                var mockEvent:Event?
+                var mockEvent:Event!
                 
                 beforeEach {
                     //
@@ -56,14 +56,12 @@ class EventDescriptionFormatterSpec: QuickSpec
                     let endDate:NSDate = startDate.mt_dateHours(after: 1) as NSDate
                     
                     //http://stackoverflow.com/questions/24041258/how-passing-a-protocol-as-parameter-in-swift/27162499#27162499
-                    mockEvent = OCMStrictProtocolMock(for:Event.self) as? Event
-//                    OCMockObject().stub(mockEvent?.startDate)
+                    mockEvent = OCMStrictProtocolMock(for:Event.self) as! Event
+//                    let proco:Protocol! = objc_getProtocol("BDDExamplesSwift.Event")
+//                    mockEvent = OCMockObject.mock(for: proco)
                    
-                    let start1 = (mockEvent?.startDate)!
-                    OCMStub(start1).andReturn(startDate)
-                    
-                    let end1 = (mockEvent?.endDate)!
-                    OCMStub(end1).andReturn(endDate)
+                    OCMStub(mockEvent.startDate).andReturn(startDate)
+                    OCMStub(mockEvent.endDate).andReturn(endDate)
                     
                     let start:NSString? = descriptionFormatter?.dateFormatter?.string(from: startDate as Date) as NSString?
                     let end:NSString? = descriptionFormatter?.dateFormatter?.string(from: endDate as Date) as NSString?
@@ -71,7 +69,7 @@ class EventDescriptionFormatterSpec: QuickSpec
                     OCMStub(start!).andReturn("ddd")
                     OCMStub(end!).andReturn("ddddf")
                     
-                    eventDescription = descriptionFormatter?.eventDescriptionFromEvent(event: mockEvent!)
+                    eventDescription = descriptionFormatter?.eventDescriptionFromEvent(event: mockEvent)
                 }
                 
                 it("验证开始", closure: {
