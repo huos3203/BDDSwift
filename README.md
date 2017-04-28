@@ -81,7 +81,7 @@ NSStringFromClass(self).components(separatedBy: ".").last!
 
 优化在OC代码中使用NSStringFromClass方式获取类名称字符串：
 ```diff
-+ (NSString *)storyboardIdentifierForClass:(Class)theClass;
+++ (NSString *)storyboardIdentifierForClass:(Class)theClass;
 {
     NSString *className = NSStringFromClass(theClass);
 +   NSArray *swiftClassName = [className componentsSeparatedByString:@"."];
