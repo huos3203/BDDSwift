@@ -14,7 +14,7 @@ target 'BDDExamplesSwift' do
     pod 'Nimble'
     pod 'OCMock', '~> 3.4'
     pod 'MTDates'
-    pod "KPAStoryboardConvenience"
+    pod "KPAStoryboardConvenience",git:"https://github.com/huos3203/KPAStoryboardConvenience.git"
     pod "KPAViewControllerTestHelper", git: "https://github.com/klaaspieter/KPAViewControllerTestHelper.git"
   end
   
