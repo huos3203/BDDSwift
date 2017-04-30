@@ -47,6 +47,8 @@ class BDDExamplesSwiftTests: XCTestCase {
         class_respondsToSelector(<#T##cls: AnyClass!##AnyClass!#>, <#T##sel: Selector!##Selector!#>)
         objc_getClass(<#T##name: UnsafePointer<Int8>!##UnsafePointer<Int8>!#>)
         class_getClassMethod(<#T##cls: AnyClass!##AnyClass!#>, <#T##name: Selector!##Selector!#>)
+        object_getClass(<#T##obj: Any!##Any!#>)
+        
     }
     
     func nihao(hh:String)
