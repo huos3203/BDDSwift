@@ -25,24 +25,8 @@ class LoadStoryBoardSpec: QuickSpec
             
             var viewController:SignInViewController?
             beforeEach {
-                
-                let name:AnyClass! = object_getClass(SignInViewController.self)
-                let str = NSStringFromClass(SignInViewController.self)
-                let dd = String.init(describing: SignInViewController.self)
-                let ddd = String(describing: type(of: SignInViewController.self))
-                print("\(ddd)-------\(dd)----------\(name!)---------\(str)")
-/*                BDDExamplesSwift.SignInViewController
-                  ---------
-                  BDDExamplesSwift.SignInViewController
- */
-                //
-//                let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-//                viewController = storyboard.instantiateViewController(withIdentifier: "SignInViewController") as! SignInViewController
                 UIStoryboard.setMainStoryboardName("Main")
                 viewController = UIStoryboard.main().instantiateViewController(for: SignInViewController.self) as? SignInViewController
-                
-                
-                
             }
             
             afterEach {

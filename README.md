@@ -94,5 +94,43 @@ NSStringFromClass(self).components(separatedBy: ".").last!
     return className;
 }
 ```
+### Selecter方法选择器
+
+1. 直接
+```swift
+let action:Selector = #selector(ViewController.test)
+```
+2. Selceter通过方法签名来获取
+```swift
+let method:Selecter = #selector(nihao(hh:))
+```
+#### 使用
+1. self.perform(<#T##aSelector: Selector!##Selector!#>)
+
+带参数时：`self.perform(<#T##aSelector: Selector!##Selector!#>, with: <#T##Any!#>)`
+```swift
+self.perform(selc, with: "dfdf")
+```
+2. OC中的内省(introspection)机制
+`isMemberOfClass:`:判断 myObject 是否是 NSObject 的子类。  
+`respondsToSelector:`:当我们使用了一个带有可选方法的协议时，为了避免崩溃发生，可以借助这个函数来判断这个对象是否可以调用此可选方法。  
+
+```objc
+[myObject isMemberOfClass:NSObject.class];
+
+[myObject respondsToSelector:@selector(doStuff:)];
+
+// isa == class
+
+class_respondsToSelector(myObject.class, @selector(doStuff:));
+```
+
+swift版本：
+```swift
+self.responds(to: <#T##Selector!#>)
+self.isMember(of: <#T##AnyClass#>)
+
+```
+首先是这个 isMemberOfClass，这是 Foundation 当中的一部分，这里我们查看 myObject 是否是 NSObject 的子类。接下来是这个 respondsToSelector:，当我们使用了一个带有可选方法的协议时，为了避免崩溃发生，可以借助这个函数来判断这个对象是否可以调用此可选方法。在运行时层面，isMemberOfClass 对比两者的 isa 是否相同。respondsToSelector" 则封装了一个 Objective-C 运行时函数：respondsToSelector，其接受 Selector 和类为参数。
 
 

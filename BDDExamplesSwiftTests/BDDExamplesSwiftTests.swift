@@ -37,4 +37,20 @@ class BDDExamplesSwiftTests: XCTestCase {
         }
     }
     
+    func testSelector() {
+        //运行时，结构体，方法签名
+        let selc:Selector = #selector(nihao(hh:))
+        self.perform(selc, with: "dfdf")
+        
+        self.responds(to: <#T##Selector!#>)
+        self.isMember(of: <#T##AnyClass#>)
+        class_respondsToSelector(<#T##cls: AnyClass!##AnyClass!#>, <#T##sel: Selector!##Selector!#>)
+        objc_getClass(<#T##name: UnsafePointer<Int8>!##UnsafePointer<Int8>!#>)
+        class_getClassMethod(<#T##cls: AnyClass!##AnyClass!#>, <#T##name: Selector!##Selector!#>)
+    }
+    
+    func nihao(hh:String)
+    {
+        print("-----------\(hh)")
+    }
 }

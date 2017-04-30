@@ -18,6 +18,9 @@
 		84994F4D1EAF961D00B0E1FD /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84994F4C1EAF961D00B0E1FD /* SignInViewController.swift */; };
 		84994F501EB23DDD00B0E1FD /* EventDescriptionFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D995DF1EB03A44004A509A /* EventDescriptionFormatter.swift */; };
 		84994F521EB401E000B0E1FD /* ProcotolHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84994F511EB401E000B0E1FD /* ProcotolHelper.swift */; };
+		84994F551EB4383400B0E1FD /* CalendarDataDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84994F541EB4383400B0E1FD /* CalendarDataDownloader.swift */; };
+		84BBF1D61EB56017004B56C1 /* PhotoUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBF1D51EB56017004B56C1 /* PhotoUploadViewController.swift */; };
+		84BBF1D81EB56067004B56C1 /* PhotoUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBF1D71EB56067004B56C1 /* PhotoUploader.swift */; };
 		D2D995E01EB03A45004A509A /* EventDescriptionFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D995DF1EB03A44004A509A /* EventDescriptionFormatter.swift */; };
 		D2D995E21EB048F1004A509A /* EventDescriptionFormatterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D995E11EB048F1004A509A /* EventDescriptionFormatterSpec.swift */; };
 		D2D995E41EB09B1C004A509A /* OCMockHepler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D995E31EB09B1B004A509A /* OCMockHepler.swift */; };
@@ -66,18 +69,22 @@
 		84994F471EAEC66B00B0E1FD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		84994F4C1EAF961D00B0E1FD /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = viewController/SignInViewController.swift; sourceTree = "<group>"; };
 		84994F511EB401E000B0E1FD /* ProcotolHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProcotolHelper.swift; path = Message/ProcotolHelper.swift; sourceTree = "<group>"; };
+		84994F541EB4383400B0E1FD /* CalendarDataDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarDataDownloader.swift; path = Downloader/CalendarDataDownloader.swift; sourceTree = "<group>"; };
+		84BBF1D51EB56017004B56C1 /* PhotoUploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoUploadViewController.swift; path = BarButtonItem/PhotoUploadViewController.swift; sourceTree = "<group>"; };
+		84BBF1D71EB56067004B56C1 /* PhotoUploader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoUploader.swift; sourceTree = "<group>"; };
+		84BBF1DA1EB5B44B004B56C1 /* guoshi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guoshi.png; sourceTree = "<group>"; };
 		89816BFED850B069827DA5FC /* Pods-BDDExamplesSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDDExamplesSwiftUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BDDExamplesSwiftUITests/Pods-BDDExamplesSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9652EE80952F3C80CE39F6F1 /* Pods-BDDExamplesSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDDExamplesSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-BDDExamplesSwift/Pods-BDDExamplesSwift.release.xcconfig"; sourceTree = "<group>"; };
 		B3DAAF5AB69BB0A2920F1C28 /* Pods_BDDExamplesSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BDDExamplesSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1DF832199DE051B27A2D46 /* Pods-BDDExamplesSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDDExamplesSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BDDExamplesSwiftTests/Pods-BDDExamplesSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D2D995DF1EB03A44004A509A /* EventDescriptionFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventDescriptionFormatter.swift; path = Message/EventDescriptionFormatter.swift; sourceTree = "<group>"; };
-		D2D995E11EB048F1004A509A /* EventDescriptionFormatterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDescriptionFormatterSpec.swift; sourceTree = "<group>"; };
+		D2D995E11EB048F1004A509A /* EventDescriptionFormatterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventDescriptionFormatterSpec.swift; path = BDDExamplesSwiftTests/EventDescriptionFormatterSpec.swift; sourceTree = SOURCE_ROOT; };
 		D2D995E31EB09B1B004A509A /* OCMockHepler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCMockHepler.swift; sourceTree = "<group>"; };
 		D2EABB781EB1BF9B00088A73 /* BDDExamplesSwiftTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BDDExamplesSwiftTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		D2EABB791EB1BF9C00088A73 /* OCMockStubHepler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMockStubHepler.h; path = Helper/OCMockStubHepler.h; sourceTree = "<group>"; };
 		D2EABB7A1EB1BF9C00088A73 /* OCMockStubHepler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCMockStubHepler.m; path = Helper/OCMockStubHepler.m; sourceTree = "<group>"; };
 		D2EABB7D1EB1C01000088A73 /* BDDTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDDTest.m; sourceTree = "<group>"; };
-		D2EABB7F1EB31C1200088A73 /* LoadStoryBoardSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadStoryBoardSpec.swift; path = UISpec/LoadStoryBoardSpec.swift; sourceTree = "<group>"; };
+		D2EABB7F1EB31C1200088A73 /* LoadStoryBoardSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadStoryBoardSpec.swift; path = BDDExamplesSwiftTests/UISpec/LoadStoryBoardSpec.swift; sourceTree = SOURCE_ROOT; };
 		F17536B6FCC9AA010647380F /* Pods-BDDExamplesSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDDExamplesSwiftUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BDDExamplesSwiftUITests/Pods-BDDExamplesSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +155,7 @@
 		84994F141EAE385C00B0E1FD /* BDDExamplesSwift */ = {
 			isa = PBXGroup;
 			children = (
+				84994F531EB437EC00B0E1FD /* DownImage */,
 				84994F371EAE38A100B0E1FD /* Bar Button Item */,
 				84994F361EAE388A00B0E1FD /* Messsage Formatter */,
 				84994F351EAE387300B0E1FD /* Login View Controller */,
@@ -166,10 +174,8 @@
 			children = (
 				D2EABB7C1EB1BFA300088A73 /* Hepler */,
 				84994F2A1EAE385D00B0E1FD /* BDDExamplesSwiftTests.swift */,
-				D2D995E11EB048F1004A509A /* EventDescriptionFormatterSpec.swift */,
 				D2EABB7D1EB1C01000088A73 /* BDDTest.m */,
 				84994F2C1EAE385D00B0E1FD /* Info.plist */,
-				D2EABB7F1EB31C1200088A73 /* LoadStoryBoardSpec.swift */,
 			);
 			path = BDDExamplesSwiftTests;
 			sourceTree = "<group>";
@@ -178,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				84994F4C1EAF961D00B0E1FD /* SignInViewController.swift */,
+				D2EABB7F1EB31C1200088A73 /* LoadStoryBoardSpec.swift */,
 			);
 			name = "Login View Controller";
 			sourceTree = "<group>";
@@ -187,6 +194,7 @@
 			children = (
 				D2D995DF1EB03A44004A509A /* EventDescriptionFormatter.swift */,
 				84994F511EB401E000B0E1FD /* ProcotolHelper.swift */,
+				D2D995E11EB048F1004A509A /* EventDescriptionFormatterSpec.swift */,
 			);
 			name = "Messsage Formatter";
 			sourceTree = "<group>";
@@ -194,6 +202,9 @@
 		84994F371EAE38A100B0E1FD /* Bar Button Item */ = {
 			isa = PBXGroup;
 			children = (
+				84BBF1DA1EB5B44B004B56C1 /* guoshi.png */,
+				84BBF1D51EB56017004B56C1 /* PhotoUploadViewController.swift */,
+				84BBF1D71EB56067004B56C1 /* PhotoUploader.swift */,
 			);
 			name = "Bar Button Item";
 			sourceTree = "<group>";
@@ -205,6 +216,14 @@
 				84994F411EAEC16800B0E1FD /* Info.plist */,
 			);
 			path = BDDExamplesSwiftUITests;
+			sourceTree = "<group>";
+		};
+		84994F531EB437EC00B0E1FD /* DownImage */ = {
+			isa = PBXGroup;
+			children = (
+				84994F541EB4383400B0E1FD /* CalendarDataDownloader.swift */,
+			);
+			name = DownImage;
 			sourceTree = "<group>";
 		};
 		D2EABB7C1EB1BFA300088A73 /* Hepler */ = {
@@ -515,7 +534,10 @@
 				D2D995E01EB03A45004A509A /* EventDescriptionFormatter.swift in Sources */,
 				84994F4D1EAF961D00B0E1FD /* SignInViewController.swift in Sources */,
 				84994F521EB401E000B0E1FD /* ProcotolHelper.swift in Sources */,
+				84BBF1D61EB56017004B56C1 /* PhotoUploadViewController.swift in Sources */,
+				84BBF1D81EB56067004B56C1 /* PhotoUploader.swift in Sources */,
 				84994F181EAE385C00B0E1FD /* ViewController.swift in Sources */,
+				84994F551EB4383400B0E1FD /* CalendarDataDownloader.swift in Sources */,
 				84994F161EAE385C00B0E1FD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
