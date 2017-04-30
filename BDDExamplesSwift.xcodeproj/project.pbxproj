@@ -21,6 +21,7 @@
 		84994F551EB4383400B0E1FD /* CalendarDataDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84994F541EB4383400B0E1FD /* CalendarDataDownloader.swift */; };
 		84BBF1D61EB56017004B56C1 /* PhotoUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBF1D51EB56017004B56C1 /* PhotoUploadViewController.swift */; };
 		84BBF1D81EB56067004B56C1 /* PhotoUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBF1D71EB56067004B56C1 /* PhotoUploader.swift */; };
+		84BBF1DD1EB61BDB004B56C1 /* DogLife.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBF1DC1EB61BDB004B56C1 /* DogLife.swift */; };
 		D2D995E01EB03A45004A509A /* EventDescriptionFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D995DF1EB03A44004A509A /* EventDescriptionFormatter.swift */; };
 		D2D995E21EB048F1004A509A /* EventDescriptionFormatterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D995E11EB048F1004A509A /* EventDescriptionFormatterSpec.swift */; };
 		D2D995E41EB09B1C004A509A /* OCMockHepler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D995E31EB09B1B004A509A /* OCMockHepler.swift */; };
@@ -73,6 +74,7 @@
 		84BBF1D51EB56017004B56C1 /* PhotoUploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoUploadViewController.swift; path = BarButtonItem/PhotoUploadViewController.swift; sourceTree = "<group>"; };
 		84BBF1D71EB56067004B56C1 /* PhotoUploader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoUploader.swift; sourceTree = "<group>"; };
 		84BBF1DA1EB5B44B004B56C1 /* guoshi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guoshi.png; sourceTree = "<group>"; };
+		84BBF1DC1EB61BDB004B56C1 /* DogLife.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DogLife.swift; path = Dog/DogLife.swift; sourceTree = "<group>"; };
 		89816BFED850B069827DA5FC /* Pods-BDDExamplesSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDDExamplesSwiftUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BDDExamplesSwiftUITests/Pods-BDDExamplesSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9652EE80952F3C80CE39F6F1 /* Pods-BDDExamplesSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDDExamplesSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-BDDExamplesSwift/Pods-BDDExamplesSwift.release.xcconfig"; sourceTree = "<group>"; };
 		B3DAAF5AB69BB0A2920F1C28 /* Pods_BDDExamplesSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BDDExamplesSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +157,7 @@
 		84994F141EAE385C00B0E1FD /* BDDExamplesSwift */ = {
 			isa = PBXGroup;
 			children = (
+				84BBF1DB1EB61941004B56C1 /* procotol */,
 				84994F531EB437EC00B0E1FD /* DownImage */,
 				84994F371EAE38A100B0E1FD /* Bar Button Item */,
 				84994F361EAE388A00B0E1FD /* Messsage Formatter */,
@@ -224,6 +227,14 @@
 				84994F541EB4383400B0E1FD /* CalendarDataDownloader.swift */,
 			);
 			name = DownImage;
+			sourceTree = "<group>";
+		};
+		84BBF1DB1EB61941004B56C1 /* procotol */ = {
+			isa = PBXGroup;
+			children = (
+				84BBF1DC1EB61BDB004B56C1 /* DogLife.swift */,
+			);
+			name = procotol;
 			sourceTree = "<group>";
 		};
 		D2EABB7C1EB1BFA300088A73 /* Hepler */ = {
@@ -531,6 +542,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84BBF1DD1EB61BDB004B56C1 /* DogLife.swift in Sources */,
 				D2D995E01EB03A45004A509A /* EventDescriptionFormatter.swift in Sources */,
 				84994F4D1EAF961D00B0E1FD /* SignInViewController.swift in Sources */,
 				84994F521EB401E000B0E1FD /* ProcotolHelper.swift in Sources */,

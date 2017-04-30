@@ -9,7 +9,8 @@
 import UIKit
 import Foundation
 
-@objc public protocol Event {
+@objc public protocol Event:NSObjectProtocol
+{
     //
     @objc var name:String{get}
     @objc var startDate:NSDate{get}

@@ -122,8 +122,12 @@ if ([obj respondsToSelector:sel])
 } 
 ```
 #### 更多内省(introspection)机制运行时API
-(BOOL) isKindOfClass: classObj 用来判断是否是某个类或其子类的实例    
+-(BOOL) isKindOfClass: classObj 用来判断是否是某个类或其子类的实例    
 -(BOOL) isMemberOfClass: classObj 用来判断是否是某个类的实例   
 -(BOOL) respondsToSelector: selector 用来判断是否有以某个名字命名的方法(被封装在一个selector的对象里传递)   
 +(BOOL) instancesRespondToSelector: selector 用来判断实例是否有以某个名字命名的方法. 和上面一个不同之处在于, 前面这个方法可以用在实例和类上，而此方法只能用在类上.    
 
+### swift命名空间
+由于Swift在继承或者实现时没有类的命名空间的概念，而ObjC中既有NSObject类又有NSObject协议，所以在Swift中将NSObject协议对应成了NSObjectProtocol
+
+Swift中是实现了命名空间功能的，只是这个命名空间不像C#的namespace或者Java中的package那样需要显式在文件中指定，而是采用模块（Module）的概念：在同一个模块中所有的Swift类处于同一个命名空间，它们之间不需要导入就可以相互访问。很明显Swift的这种做法是为了最大限度的简化Swift编程。其实一个module就可以看成是一个project中的一个target，在创建项目的时候默认就会创建一个target，这个target的默认模块名称就是这个项目的名称（可以在target的Build Settings—Product Module Name配置）。

@@ -19,8 +19,8 @@ class PhotoUploadViewController: UIViewController {
         let navigat = UINavigationController.init(rootViewController: self)
 //        let method2 = #selector(uploadertt as ()->())
         
-        let item = UIBarButtonItem.init(title: "上传", style: .plain, target: self, action: Selector(up))
-        navigat.navigationItem.rightBarButtonItem = item
+//        let item = UIBarButtonItem.init(title: "上传", style: .plain, target: self, action: Selector(up))
+//        navigat.navigationItem.rightBarButtonItem = item
     }
 
     func uploadertt(image:UIImage)
