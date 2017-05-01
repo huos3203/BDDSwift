@@ -102,6 +102,8 @@ swift版本：
 let action:Selector = #selector(ViewController.test)
 ```
 2. Selceter通过方法签名来获取
+![](guoshi.png)
+
 ```swift
 let method:Selecter = #selector(nihao(hh:))
 self.perform(selc, with: "dfdf")
@@ -111,6 +113,7 @@ func nihao(hh:String)
     print("---\(hh)")
 }
 ```
+
 oc版本：
 ```objc
 -(id) performSelector: selector

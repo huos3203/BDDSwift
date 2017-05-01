@@ -22,6 +22,11 @@
 		84BBF1D61EB56017004B56C1 /* PhotoUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBF1D51EB56017004B56C1 /* PhotoUploadViewController.swift */; };
 		84BBF1D81EB56067004B56C1 /* PhotoUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBF1D71EB56067004B56C1 /* PhotoUploader.swift */; };
 		84BBF1DD1EB61BDB004B56C1 /* DogLife.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBF1DC1EB61BDB004B56C1 /* DogLife.swift */; };
+		84BBF1DF1EB6B9B2004B56C1 /* PhotoUploaderVCSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBF1DE1EB6B9B2004B56C1 /* PhotoUploaderVCSpec.swift */; };
+		84BBF1E11EB6D556004B56C1 /* PhotoUploaderVCSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BBF1E01EB6D556004B56C1 /* PhotoUploaderVCSpec.m */; };
+		84BBF1E31EB6D5D8004B56C1 /* PhotoUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBF1D71EB56067004B56C1 /* PhotoUploader.swift */; };
+		84BBF1E51EB6D5DC004B56C1 /* PhotoUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBF1D51EB56017004B56C1 /* PhotoUploadViewController.swift */; };
+		84BBF1ED1EB6DD22004B56C1 /* UIBarButtonItem+Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BBF1E81EB6DD22004B56C1 /* UIBarButtonItem+Specs.m */; };
 		D2D995E01EB03A45004A509A /* EventDescriptionFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D995DF1EB03A44004A509A /* EventDescriptionFormatter.swift */; };
 		D2D995E21EB048F1004A509A /* EventDescriptionFormatterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D995E11EB048F1004A509A /* EventDescriptionFormatterSpec.swift */; };
 		D2D995E41EB09B1C004A509A /* OCMockHepler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D995E31EB09B1B004A509A /* OCMockHepler.swift */; };
@@ -75,6 +80,14 @@
 		84BBF1D71EB56067004B56C1 /* PhotoUploader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoUploader.swift; sourceTree = "<group>"; };
 		84BBF1DA1EB5B44B004B56C1 /* guoshi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guoshi.png; sourceTree = "<group>"; };
 		84BBF1DC1EB61BDB004B56C1 /* DogLife.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DogLife.swift; path = Dog/DogLife.swift; sourceTree = "<group>"; };
+		84BBF1DE1EB6B9B2004B56C1 /* PhotoUploaderVCSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoUploaderVCSpec.swift; sourceTree = "<group>"; };
+		84BBF1E01EB6D556004B56C1 /* PhotoUploaderVCSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoUploaderVCSpec.m; sourceTree = "<group>"; };
+		84BBF1E71EB6DD22004B56C1 /* UIBarButtonItem+Specs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Specs.h"; sourceTree = "<group>"; };
+		84BBF1E81EB6DD22004B56C1 /* UIBarButtonItem+Specs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Specs.m"; sourceTree = "<group>"; };
+		84BBF1E91EB6DD22004B56C1 /* UIButton+Specs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Specs.h"; sourceTree = "<group>"; };
+		84BBF1EA1EB6DD22004B56C1 /* UIButton+Specs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Specs.m"; sourceTree = "<group>"; };
+		84BBF1EB1EB6DD22004B56C1 /* UIView+Specs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Specs.h"; sourceTree = "<group>"; };
+		84BBF1EC1EB6DD22004B56C1 /* UIView+Specs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Specs.m"; sourceTree = "<group>"; };
 		89816BFED850B069827DA5FC /* Pods-BDDExamplesSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDDExamplesSwiftUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BDDExamplesSwiftUITests/Pods-BDDExamplesSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9652EE80952F3C80CE39F6F1 /* Pods-BDDExamplesSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDDExamplesSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-BDDExamplesSwift/Pods-BDDExamplesSwift.release.xcconfig"; sourceTree = "<group>"; };
 		B3DAAF5AB69BB0A2920F1C28 /* Pods_BDDExamplesSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BDDExamplesSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,9 +178,9 @@
 				84994F151EAE385C00B0E1FD /* AppDelegate.swift */,
 				84994F171EAE385C00B0E1FD /* ViewController.swift */,
 				84994F191EAE385C00B0E1FD /* Main.storyboard */,
+				84994F211EAE385C00B0E1FD /* Info.plist */,
 				84994F1C1EAE385C00B0E1FD /* Assets.xcassets */,
 				84994F1E1EAE385C00B0E1FD /* LaunchScreen.storyboard */,
-				84994F211EAE385C00B0E1FD /* Info.plist */,
 			);
 			path = BDDExamplesSwift;
 			sourceTree = "<group>";
@@ -175,10 +188,15 @@
 		84994F291EAE385D00B0E1FD /* BDDExamplesSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
+				84BBF1E61EB6DD22004B56C1 /* Helper Categories */,
 				D2EABB7C1EB1BFA300088A73 /* Hepler */,
 				84994F2A1EAE385D00B0E1FD /* BDDExamplesSwiftTests.swift */,
 				D2EABB7D1EB1C01000088A73 /* BDDTest.m */,
 				84994F2C1EAE385D00B0E1FD /* Info.plist */,
+				D2EABB7F1EB31C1200088A73 /* LoadStoryBoardSpec.swift */,
+				D2D995E11EB048F1004A509A /* EventDescriptionFormatterSpec.swift */,
+				84BBF1DE1EB6B9B2004B56C1 /* PhotoUploaderVCSpec.swift */,
+				84BBF1E01EB6D556004B56C1 /* PhotoUploaderVCSpec.m */,
 			);
 			path = BDDExamplesSwiftTests;
 			sourceTree = "<group>";
@@ -187,7 +205,6 @@
 			isa = PBXGroup;
 			children = (
 				84994F4C1EAF961D00B0E1FD /* SignInViewController.swift */,
-				D2EABB7F1EB31C1200088A73 /* LoadStoryBoardSpec.swift */,
 			);
 			name = "Login View Controller";
 			sourceTree = "<group>";
@@ -197,7 +214,6 @@
 			children = (
 				D2D995DF1EB03A44004A509A /* EventDescriptionFormatter.swift */,
 				84994F511EB401E000B0E1FD /* ProcotolHelper.swift */,
-				D2D995E11EB048F1004A509A /* EventDescriptionFormatterSpec.swift */,
 			);
 			name = "Messsage Formatter";
 			sourceTree = "<group>";
@@ -205,9 +221,9 @@
 		84994F371EAE38A100B0E1FD /* Bar Button Item */ = {
 			isa = PBXGroup;
 			children = (
-				84BBF1DA1EB5B44B004B56C1 /* guoshi.png */,
 				84BBF1D51EB56017004B56C1 /* PhotoUploadViewController.swift */,
 				84BBF1D71EB56067004B56C1 /* PhotoUploader.swift */,
+				84BBF1DA1EB5B44B004B56C1 /* guoshi.png */,
 			);
 			name = "Bar Button Item";
 			sourceTree = "<group>";
@@ -235,6 +251,19 @@
 				84BBF1DC1EB61BDB004B56C1 /* DogLife.swift */,
 			);
 			name = procotol;
+			sourceTree = "<group>";
+		};
+		84BBF1E61EB6DD22004B56C1 /* Helper Categories */ = {
+			isa = PBXGroup;
+			children = (
+				84BBF1E71EB6DD22004B56C1 /* UIBarButtonItem+Specs.h */,
+				84BBF1E81EB6DD22004B56C1 /* UIBarButtonItem+Specs.m */,
+				84BBF1E91EB6DD22004B56C1 /* UIButton+Specs.h */,
+				84BBF1EA1EB6DD22004B56C1 /* UIButton+Specs.m */,
+				84BBF1EB1EB6DD22004B56C1 /* UIView+Specs.h */,
+				84BBF1EC1EB6DD22004B56C1 /* UIView+Specs.m */,
+			);
+			path = "Helper Categories";
 			sourceTree = "<group>";
 		};
 		D2EABB7C1EB1BFA300088A73 /* Hepler */ = {
@@ -559,11 +588,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				84994F2B1EAE385D00B0E1FD /* BDDExamplesSwiftTests.swift in Sources */,
+				84BBF1E11EB6D556004B56C1 /* PhotoUploaderVCSpec.m in Sources */,
 				D2D995E41EB09B1C004A509A /* OCMockHepler.swift in Sources */,
+				84BBF1E51EB6D5DC004B56C1 /* PhotoUploadViewController.swift in Sources */,
 				84994F501EB23DDD00B0E1FD /* EventDescriptionFormatter.swift in Sources */,
 				D2EABB801EB31C1200088A73 /* LoadStoryBoardSpec.swift in Sources */,
 				D2D995E21EB048F1004A509A /* EventDescriptionFormatterSpec.swift in Sources */,
 				D2EABB7E1EB1C01000088A73 /* BDDTest.m in Sources */,
+				84BBF1DF1EB6B9B2004B56C1 /* PhotoUploaderVCSpec.swift in Sources */,
+				84BBF1ED1EB6DD22004B56C1 /* UIBarButtonItem+Specs.m in Sources */,
+				84BBF1E31EB6D5D8004B56C1 /* PhotoUploader.swift in Sources */,
 				D2EABB7B1EB1BF9C00088A73 /* OCMockStubHepler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

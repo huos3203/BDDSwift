@@ -8,30 +8,31 @@
 
 import UIKit
 
-class PhotoUploadViewController: UIViewController {
+public class PhotoUploadViewController: UIViewController {
 
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        //UI交互伪代码
-        let navigat = UINavigationController.init(rootViewController: self)
-//        let method2 = #selector(uploadertt as ()->())
+        //
+        let barItem = UIBarButtonItem.init(title: "Upload", style: .plain, target: self, action: #selector(didTapUploadButton(uploadButton:)))
+        self.navigationItem.rightBarButtonItem = barItem
         
-//        let item = UIBarButtonItem.init(title: "上传", style: .plain, target: self, action: Selector(up))
-//        navigat.navigationItem.rightBarButtonItem = item
     }
 
-    func uploadertt(image:UIImage)
+    func didTapUploadButton(uploadButton:UIBarButtonItem)
     {
-        //
-        uploader.upLoad(image: UIImage(), to: NSURL()) { (result, error) in
-            //
-            
-        }
+        print("09867561527")
+        //void (^completion)(NSError *) = ^(NSError* error){};
+//        [self.photoUploader uploadPhoto:[UIImage new] completion:completion];
+
+//        uploader.upLoad(image: UIImage(), to: NSURL.init(string: "")!) { (result, error) in
+//            //
+//            
+//        }
     }
-    override func didReceiveMemoryWarning() {
+    override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -46,7 +47,7 @@ class PhotoUploadViewController: UIViewController {
         self.uploader = uploader
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 

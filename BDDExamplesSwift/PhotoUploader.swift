@@ -9,12 +9,14 @@
 import UIKit
 
 //网路层
-class PhotoUploader
+@objc
+public class PhotoUploader:NSObject
 {
     //上传伪代码
-    func upLoad(image:UIImage,to server:NSURL ,handler:(String,String)->Void)
+    public func upLoad(image:UIImage,to server:NSURL ,handler:(String,String)->Void)
     {
         //
+        handler("sdfsdfs","sfsdfhsh")
     }
     
 }
